@@ -1,0 +1,306 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "League Spartan", sans-serif;
+}
+
+main {
+  padding: 2rem 7.5rem;
+  max-width: 90rem;
+  min-height: 30rem;
+  margin: auto;
+  margin-top: 5rem;
+
+  & .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    & .first {
+      padding-right: 12rem;
+
+      & h1 {
+        font-size: 3rem;
+        line-height: 2.7rem;
+        margin-bottom: 1rem;
+        color: hsl(300, 43%, 22%);
+      }
+
+      & p {
+        line-height: 1.3rem;
+        color: hsl(300, 43%, 22%);
+      }
+    }
+
+    & .second {
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+
+      & div {
+        padding: 1rem;
+        background-color: hsl(300, 24%, 96%);
+        border-radius: 0.5rem;
+
+        & p {
+          display: inline;
+          color: hsl(300, 43%, 22%);
+          font-weight: 700;
+        }
+
+        & img {
+          margin-right: 0.5rem;
+
+          &:last-child {
+            margin-right: 1rem;
+          }
+        }
+
+        &:first-child {
+          margin-right: 6rem;
+          margin-bottom: 1rem;
+        }
+
+        &:nth-child(2) {
+          margin-right: 3rem;
+          margin-left: 3rem;
+        }
+
+        &:last-child {
+          margin-left: 6rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  & .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 2rem 0;
+    color: white;
+
+    & span {
+      color: hsl(303, 10%, 53%);
+      font-weight: 700;
+    }
+
+    & .third {
+      margin-bottom: 4rem;
+      padding: 1.5rem;
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 0.5rem;
+
+      & .top {
+        display: flex;
+
+        & img {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1rem;
+        }
+
+        & > .under {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      & .bottom {
+        margin-top: 1rem;
+
+        & p {
+          line-height: 1.3rem;
+        }
+      }
+    }
+
+    & .fourth {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      background-color: hsl(300, 43%, 22%);
+      border-radius: 0.5rem;
+
+      & .top {
+        display: flex;
+
+        & img {
+          border-radius: 50%;
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 1rem;
+        }
+
+        & > .under {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      & .bottom {
+        margin-top: 1rem;
+
+        & p {
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+
+  & .fifth {
+    margin-top: 4rem;
+    padding: 1.5rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+
+    & .top {
+      display: flex;
+
+      & img {
+        border-radius: 50%;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+      }
+
+      & > .under {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    & .bottom {
+      margin-top: 1rem;
+
+      & p {
+        line-height: 1.3rem;
+      }
+    }
+  }
+}
+
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 769px) {
+  main {
+    & .container1 {
+      & .first {
+        padding-right: 3rem;
+      }
+
+      & .second {
+        & > div {
+          padding: 1rem;
+          text-align: center;
+
+          & p {
+            display: block;
+          }
+        }
+      }
+
+      & .container2 {
+        gap: 0.5rem;
+
+        & .third {
+          padding: 0.9rem;
+        }
+
+        & .fourth {
+          padding: 0.9rem;
+        }
+
+        & .fifth {
+          padding: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 2rem 2rem;
+    max-width: 25rem;
+    min-height: 30rem;
+
+    & .container1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+
+      & .first {
+        padding-right: 0;
+      }
+
+      & .second {
+        & > div {
+          padding: 1rem;
+
+          & p {
+            display: block;
+          }
+
+          & img {
+            margin-right: 0.5rem;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+
+          &:first-child {
+            margin-right: 0;
+            margin-bottom: 1rem;
+          }
+
+          &:nth-child(2) {
+            margin-right: 0;
+            margin-left: 0;
+          }
+
+          &:last-child {
+            margin-left: 0;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    & .container2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0rem;
+      padding: 2rem 0;
+
+      & .third {
+        margin-bottom: 1rem;
+      }
+
+      & .fourth {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      & .fifth {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
